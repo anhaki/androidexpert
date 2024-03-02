@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_apod">
+
+    <fragment
+        android:id="@+id/navigation_apod"
+        android:name="com.haki.dailyastro.ui.apod.ApodFragment"
+        android:label="@string/title_apod"
+        tools:layout="@layout/fragment_apod" />
+
+    <fragment
+        android:id="@+id/navigation_daily"
+        android:name="com.haki.dailyastro.ui.daily.DailyFragment"
+        android:label="@string/title_daily"
+        tools:layout="@layout/fragment_daily" />
+</navigation>
